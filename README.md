@@ -1,2 +1,2 @@
 # fundamentos-python
-Repositorio de NOMBRE-COMPLETO-DE-ALUMNO para el curso de fundamentos de programación
+Repositorio de Diego René Espinoza Díaz para el curso de fundamentos de programación
