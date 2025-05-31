@@ -1,18 +1,12 @@
-password = input("Ingresa una contraseña: ")
+elementosVistos = set()
+resultadoFinal = []
 
-tiene_numero = False
-tiene_mayuscula = False
+entrada = list(map(int, input("Ingresa los números separados por espacio: ").split()))
 
-if len(password) >= 8:
-    for caracter in password:
-        if caracter >= '0' and caracter <= '9':
-            tiene_numero = True
-        if caracter >= 'A' and caracter <= 'Z':
-            tiene_mayuscula = True
+for numero in entrada:
+    if numero not in elementosVistos:
+        resultadoFinal.append(numero)
+        elementosVistos.add(numero)
 
-    if tiene_numero and tiene_mayuscula:
-        print("Contraseña segura")
-    else:
-        print("Contraseña no segura")
-else:
-    print("Contraseña no segura")
+print(" ".join(map(str, resultado)))
+
