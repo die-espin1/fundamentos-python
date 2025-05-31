@@ -1,7 +1,7 @@
 numero = input("Ingresa un número entero: ")
 
 while not numero.isdigit():
-    print("Debes ingresar un número entero positivo.")
+    print("Debes ingresar un número entero que sí sea positivo :D")
     numero = input("Ingresa un número entero: ")
 
 numero = int(numero)
