@@ -1,7 +1,12 @@
+#ejercicio de valores duplicados
+elementosVistos = set()
+resultadoFinal = []
 
-numero = int(input("Entrada:\n"))
+entrada = list(map(int, input("Ingresa los números separados por espacio: ").split()))
 
-if numero % 7 == 0 and numero % 5 != 0:
-    print(f"Es mágico")
-else:
-    print(F"No es mágico D:")
+for numero in entrada:
+    if numero not in elementosVistos:
+        resultadoFinal.append(numero)
+        elementosVistos.add(numero)
+
+print(" ".join(map(str, resultado)))
