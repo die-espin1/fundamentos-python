@@ -1,11 +1,16 @@
-elementos = int(input("Ingrese los elementos consumidos: "))
+#ejercicio de números líderes
+numeros = list(map(int, input().split()))
 
-if elementos <= 100:
-    impuesto = 0
-elif elementos <= 200:
-    impuesto = (elementos - 100) * 0.5
+if not numeros:
+    print()
 else:
-    impuesto = (100 * 0.5) + ((elementos - 200) * 0.7)
-
-# Mostrar el resultado
-print("Impuesto aplicado: $", impuesto)
+    max_derecha = numeros[-1]
+    lideres = [max_derecha]
+    
+    for i in range(len(numeros)-2, -1, -1):
+        if numeros[i] > max_derecha:
+            max_derecha = numeros[i]
+            lideres.append(max_derecha)
+            
+    lideres = lideres[::-1]
+    print(' '.join(map(str, lideres)))
