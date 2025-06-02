@@ -1,4 +1,4 @@
-#ejercicio de valores duplicados
+# ejercicio de valores duplicados
 elementosVistos = set()
 resultadoFinal = []
 
@@ -9,4 +9,4 @@ for numero in entrada:
         resultadoFinal.append(numero)
         elementosVistos.add(numero)
 
-print(" ".join(map(str, resultado)))
+print(" ".join(map(str, resultadoFinal)))
